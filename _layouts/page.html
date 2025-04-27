@@ -16,6 +16,12 @@
     <title>{{ page.title }}</title>
 
     {% seo %}
+    {% if page.og_image %}
+    <meta property="og:image" content="{{ page.og_image | prepend: site.baseurl }}">
+    {% endif %}
+    {% if page.og_image_alt %}
+    <meta property="og:image:alt" content="{{ page.og_image_alt }}">
+    {% endif %}
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3019790405701706"
         crossorigin="anonymous"></script>

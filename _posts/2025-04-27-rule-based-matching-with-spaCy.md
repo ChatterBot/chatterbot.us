@@ -3,6 +3,12 @@ layout: page
 title:  "Responding using rule-based matching with spaCy"
 date:   2025-04-27 09:03:03 +0000
 categories: spaCy nlp
+tags:
+  - chatterbot
+  - spaCy
+  - nlp
+og_image: /img/articles/00-lights.jpg
+og_image_alt: Abstract article image showing patterns of lights
 ---
 
 {% picture /img/articles/00-lights.jpg --alt Abstract article image showing patterns of lights %}
