@@ -14,6 +14,11 @@ pre.highlight {
     border-radius: 3px;
 }
 
+header ::placeholder {
+    color: #eee!important;
+    opacity: 1; /* Firefox */
+}
+
 /*
  * Sidebar
  */
