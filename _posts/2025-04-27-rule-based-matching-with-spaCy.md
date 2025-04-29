@@ -1,7 +1,7 @@
 ---
-layout: page
-title:  "Responding using rule-based matching with spaCy"
-date:   2025-04-27 09:03:03 +0000
+layout: post
+title: "Responding using rule-based matching with spaCy"
+date: 2025-04-27 09:03:03 +0000
 categories: spaCy nlp
 tags:
   - chatterbot
@@ -13,8 +13,11 @@ og_image_alt: Abstract article image showing patterns of lights
 
 {% picture /img/articles/00-lights.jpg --alt Abstract article image showing patterns of lights %}
 
-<div class="text-muted mb-3">
+<div class="text-muted">
     Article by <a href="https://github.com/gunthercox/" target="_blank">Gunther Cox</a>
+</div>
+<div class="text-muted mb-3">
+    Posted {{ page.date | date: "%B %-d, %Y" }}
 </div>
 
 ChatterBot includes logic adapters that support [spaCy's rule-based matching](https://spacy.io/usage/rule-based-matching) as a method for selecting responses to input statements. This functionality can be useful for cases where you need a chat bot to respond or carry out actions for specific inputs.
@@ -149,3 +152,9 @@ print(response)
 response = chatbot.get_response('Check if the website is down')
 print(response)
 ```
+
+## Conclusion
+
+We've covered a few different examples of using spaCy's rule-based matching to detect specific responses for a ChatterBot instance. For your own projects these rules can be as simple or as complex as you see fit.
+
+If you found this article useful and want to request similar or related content feel free to open a ticket in this website's [issue tracker on GitHub](https://github.com/ChatterBot/chatterbot.us/labels/blog%20post%20topic). Please use the `"blog post topic"` tag when doing so.
