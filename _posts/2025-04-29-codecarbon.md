@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Measuring Chatbot Climate Impact with CodeCarbon"
-date: 2025-04-28 07:03:03 +0000
+date: 2025-04-29 07:03:03 +0000
 categories: libraries
 tags:
   - climate
