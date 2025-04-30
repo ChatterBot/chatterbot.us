@@ -16,6 +16,7 @@
     <title>{{ page.title }}</title>
 
     {% seo %}
+    {% feed_meta %}
     {% if page.og_image %}
     <meta property="og:image" content="{{ page.og_image | prepend: site.baseurl }}">
     {% endif %}
@@ -92,8 +93,11 @@
                 </div>
 
                 <div
-                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1>{{ page.title }}</h1>
+                    class="row pt-3 pb-2 mb-3 border-bottom">
+                    <h1>
+                        {{ page.title }}
+                        {% if page.rss %}<a href="{{ page.rss }}"><i class="icon icon-rss float-end"></i></a>{% endif %}
+                    </h1>
                 </div>
 
                 {{ content }}

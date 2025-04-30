@@ -2,6 +2,7 @@
 layout: post
 title: "Responding using rule-based matching with spaCy"
 date: 2025-04-27 09:03:03 +0000
+author: gunthercox
 categories: spaCy nlp
 tags:
   - chatterbot

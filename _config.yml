@@ -19,13 +19,16 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-seo-tag   
+  - jekyll-seo-tag
   - jekyll-gist
 
-paginate: 5
+paginate: 3
 paginate_path: "articles/page:num/"
 
 permalink: /:year/:month/:title/
+
+feed:
+  icon: /img/chatterbot.png
 
 markdown: kramdown
 highlighter: rouge

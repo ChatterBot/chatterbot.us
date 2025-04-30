@@ -19,6 +19,18 @@ header ::placeholder {
     opacity: 1; /* Firefox */
 }
 
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    background-size: 100% 100%;
+    display: inline-block;
+}
+
+.icon-rss {
+    background-image: url(/img/rss.svg);
+}
+
 /*
  * Sidebar
  */
