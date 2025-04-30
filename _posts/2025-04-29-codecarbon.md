@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Measuring Chatbot Climate Impact with CodeCarbon"
 date: 2025-04-29 07:03:03 +0000
 author: gunthercox
@@ -7,18 +7,9 @@ categories: libraries
 tags:
   - climate
   - libraries
-og_image: /img/articles/01-field.jpg
-og_image_alt: Abstract article image showing a fractal pattern in cauliflower
+image: /img/articles/01-field.jpg
+image_alt: Abstract article image showing a fractal pattern in cauliflower
 ---
-
-{% picture /img/articles/01-field.jpg --alt Abstract article image showing a fractal pattern in cauliflower %}
-
-<div class="text-muted">
-    Article by <a href="https://github.com/gunthercox/" target="_blank">Gunther Cox</a>
-</div>
-<div class="text-muted mb-3">
-    Posted {{ page.date | date: "%B %-d, %Y" }}
-</div>
 
 This past [Earth Day](https://en.wikipedia.org/wiki/Earth_Day) GitHub shared their [Climate Action Plan for Developers](https://github.com/social-impact/focus-areas/environmental-sustainability/climate-action-plan-for-developers), a collection of resources designed to create tangible steps that developers can use to improve how software impacts the planet.
 

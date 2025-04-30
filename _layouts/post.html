@@ -1,0 +1,22 @@
+---
+layout: page
+---
+
+{% picture {{ page.image }} --alt {{ page.image_alt }} %}
+
+<div class="text-muted mt-1">
+    Article by <a href="https://github.com/gunthercox/" target="_blank">Gunther Cox</a>
+</div>
+<div class="text-muted mb-3">
+    Posted {{ page.date | date: "%B %-d, %Y" }}
+</div>
+
+{{ content }}
+
+<hr/>
+
+If you found this article useful and want to request similar or related content feel free
+to open a ticket in this website's <a href="https://github.com/ChatterBot/chatterbot.us/labels/blog%20post%20topic">issue tracker on GitHub</a>.
+Please use the <code>"blog post topic"</code> tag when doing so.
+
+{% include share.html %}
