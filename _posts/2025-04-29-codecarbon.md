@@ -22,7 +22,7 @@ To test out `codecarbon` we put the following example together, demonstrating th
 ## Code Setup
 
 ```bash
-pip install codecarbon
+pip install codecarbon chatterbot[dev]
 ```
 
 Our example code will be as follows:
