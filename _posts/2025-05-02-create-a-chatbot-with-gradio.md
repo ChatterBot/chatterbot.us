@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building an Interface ChatterBot with Gradio"
+title: "Building an Interface for ChatterBot with Gradio"
 date: 2025-05-02 07:03:03 +0000
 author: gunthercox
 categories: apps deployment
