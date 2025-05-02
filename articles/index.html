@@ -12,8 +12,9 @@ rss: "/feed.xml"
         <p class="author">
             <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
         </p>
-        <div class="content">
+        <div class="content mb-5">
             {{ post.excerpt }}
+            {% picture {{ post.image }} --alt {{ post.image_alt }} %}
         </div>
         {% endfor %}
 
