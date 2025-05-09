@@ -1,0 +1,11 @@
+services:
+
+  rabbitmq:
+    image: rabbitmq:4.1
+    ports:
+      - "5672:5672"
+
+  celery:
+    build: .
+    volumes:
+       - ./data:/data

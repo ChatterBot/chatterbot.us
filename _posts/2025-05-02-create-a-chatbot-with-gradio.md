@@ -31,7 +31,7 @@ pip install --upgrade gradio chatterbot[dev]
 The following example code demonstrates how to initialize an instance of ChatterBot and set up a Gradio chat interface for it. While this example is intended to be simple, it is definitely worth checking out the Gradio [`ChatInterface`](https://www.gradio.app/docs/gradio/chatinterface) documentation which covers a wide range of other components you can add to your chat interface (such as feedback for returned responses).
 
 ```python
-# gradio-example.py 
+# gradio-example.py
 
 {% include articles/2025-04-gradio.py %}
 ```
