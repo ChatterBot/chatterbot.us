@@ -3,6 +3,7 @@ layout: post
 title: "Measuring Chatbot Climate Impact with CodeCarbon"
 date: 2025-04-29 07:03:03 +0000
 author: gunthercox
+excerpt: "Discover how to measure and track the environmental impact of your AI chatbot using CodeCarbon to estimate carbon emissions, energy consumption, and resource usage."
 categories: libraries
 tags:
   - climate

@@ -3,6 +3,7 @@ layout: post
 title: "Responding using rule-based matching with spaCy"
 date: 2025-04-27 09:03:03 +0000
 author: gunthercox
+excerpt: "Learn how to implement rule-based pattern matching in ChatterBot using spaCy's Matcher to create intelligent, context-aware chatbot responses for specific user inputs."
 categories: spaCy nlp
 tags:
   - chatterbot

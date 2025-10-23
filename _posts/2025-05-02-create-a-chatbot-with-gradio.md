@@ -3,6 +3,7 @@ layout: post
 title: "Building an Interface for ChatterBot with Gradio"
 date: 2025-05-02 07:03:03 +0000
 author: gunthercox
+excerpt: "Build and deploy a shareable chatbot interface quickly using Gradio's machine learning demo tools with ChatterBot for rapid prototyping and testing."
 categories: apps deployment
 tags:
   - chatterbot

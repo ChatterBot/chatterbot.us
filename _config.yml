@@ -4,8 +4,9 @@ title: ChatterBot
 email: community@chatterbot.us
 description: >- # this means to ignore newlines until "baseurl:"
   ChatterBot is a machine-learning based conversational dialog engine built in
-  Python which makes it possible to generate responses based on collections of
-  known conversations.
+  Python for creating intelligent chatbots. Generate natural language responses 
+  using NLP, training data, and logic adapters. Build AI chatbots with spaCy, 
+  NLTK integration, and deploy conversational AI applications easily.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chatterbot.us" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gunthercox

@@ -3,6 +3,7 @@ layout: post
 title: "Handling AI Scaling and Reducing Costs"
 date: 2025-05-09 07:03:03 +0000
 author: gunthercox
+excerpt: "Learn cost-effective AI scaling strategies using message queues with Redis and Celery to handle chatbot workloads efficiently without expensive real-time processing infrastructure."
 categories: infrastructure deployment
 tags:
   - chatterbot

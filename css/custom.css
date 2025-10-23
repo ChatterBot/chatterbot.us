@@ -111,3 +111,14 @@ header ::placeholder {
     height: 28px;
     margin-right: 5px;
 }
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 6px solid #ccc;
+    margin: 12px 0px;
+    padding: 12px 15px;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}

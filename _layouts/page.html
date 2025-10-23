@@ -4,10 +4,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="ChatterBot">
-    <meta name="author" content="Gunther Cox">
-    <meta name="keywords" content="ChatterBot, chatbot, python, machine learning, natural language processing, nlp">
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+    <meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+    {% elsif page.description %}
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:description" content="{{ page.description }}">
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}">
+    {% endif %}
+    <meta name="author" content="{{ page.author | default: 'Gunther Cox' }}">
+    <meta name="keywords" content="ChatterBot, chatbot, python, machine learning, natural language processing, nlp, conversational ai, {{ page.tags | join: ', ' }}">
     <meta name="google-adsense-account" content="ca-pub-3019790405701706">
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    {% if page.image %}
+    <meta property="og:image" content="{{ page.image | absolute_url }}">
+    {% else %}
+    <meta property="og:image" content="{{ '/img/chatterbot.png' | absolute_url }}">
+    {% endif %}
+    {% if page.image_alt %}
+    <meta property="og:image:alt" content="{{ page.image_alt }}">
+    {% endif %}
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
@@ -17,12 +40,7 @@
 
     {% seo %}
     {% feed_meta %}
-    {% if page.og_image %}
-    <meta property="og:image" content="{{ page.og_image | prepend: site.baseurl }}">
-    {% endif %}
-    {% if page.og_image_alt %}
-    <meta property="og:image:alt" content="{{ page.og_image_alt }}">
-    {% endif %}
+    {% include structured-data.html %}
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3019790405701706"
         crossorigin="anonymous"></script>
