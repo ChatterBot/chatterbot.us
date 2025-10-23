@@ -1,0 +1,90 @@
+{% if page.layout == "post" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title | escape }}",
+  {% if page.image %}
+  "image": "{{ page.image | absolute_url }}",
+  {% endif %}
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.author | default: site.author | default: 'Gunther Cox' }}",
+    "url": "https://github.com/gunthercox/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChatterBot",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/img/chatterbot.png' | absolute_url }}"
+    }
+  },
+  "description": "{{ page.excerpt | default: page.content | strip_html | truncate: 160 | escape }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "keywords": "{{ page.tags | join: ', ' }}",
+  "articleSection": "{{ page.categories | join: ', ' }}"
+}
+</script>
+{% endif %}
+
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ChatterBot",
+  "url": "{{ site.url }}",
+  "logo": "{{ '/img/chatterbot.png' | absolute_url }}",
+  "description": "{{ site.description | escape }}",
+  "sameAs": [
+    "https://github.com/gunthercox/chatterbot",
+    "https://bsky.app/profile/chatterbot.us"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ChatterBot",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description | escape }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChatterBot"
+  }
+}
+</script>
+{% endif %}
+
+{% if page.url contains "/articles/" or page.layout == "page" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}"
+    }
+    {% if page.url != "/" %}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.title | escape }}",
+      "item": "{{ page.url | absolute_url }}"
+    }
+    {% endif %}
+  ]
+}
+</script>
+{% endif %}
